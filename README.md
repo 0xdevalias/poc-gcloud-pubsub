@@ -1,4 +1,4 @@
-# test-gcloud-pubsub
+# poc-gcloud-pubsub
 
 Basic PoC/test code for using [Google Cloud Platform](https://cloud.google.com/) [PubSub](https://cloud.google.com/pubsub/) from [Go](https://golang.org/).
 

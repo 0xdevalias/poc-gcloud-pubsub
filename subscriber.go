@@ -53,6 +53,8 @@ func pull(client *pubsub.Client, name string, topic *pubsub.Topic) error {
 
 	sub := client.Subscription(name)
 	sub.ReceiveSettings.MaxOutstandingMessages = 0
+
+	fmt.Println("Listening..")
 	err := sub.Receive(ctx, func(ctx context.Context, msg *pubsub.Message) {
 		fmt.Printf("Got message: %q\n", string(msg.Data))
 		msg.Ack()
